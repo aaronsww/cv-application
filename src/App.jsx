@@ -14,7 +14,6 @@ function App() {
     <div >
       <General /> 
       <button onClick={handleContent} type="submit">Add</button>
-       
     </div>
   )
 }
