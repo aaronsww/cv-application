@@ -4,7 +4,7 @@ function Display(props) {
   return (
     <div>
          
-              <h1>name: {props.data.name}</h1>
+              <h2>name: {props.data.name}</h2>
               <p>post: {props.data.post}</p>
               <p>number: {props.data.phoneNo}</p>
               <p>email: {props.data.email}</p>

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Display(props) {
+function ExpDisplay(props) {
   return (
     <div>
-              <h1>company: {props.data.company}</h1>
+              <h2>company: {props.data.company}</h2>
               <p>position: {props.data.position}</p>
               <p>start: {props.data.start}</p>
               <p>end: {props.data.end}</p>
@@ -14,4 +14,4 @@ function Display(props) {
   )
 }
 
-export default Display
+export default ExpDisplay
