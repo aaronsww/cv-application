@@ -4,13 +4,12 @@ function Display(props) {
   return (
     <div>
          
-              <h2>name: {props.data.name}</h2>
-              <p>post: {props.data.post}</p>
-              <p>number: {props.data.phoneNo}</p>
-              <p>email: {props.data.email}</p>
-              <p>description: {props.data.description}</p>
-              <div>{ JSON.stringify(props)}</div>
-         
+          <h2>name: {props.data.name}</h2>
+          <p>post: {props.data.post}</p>
+          <p>number: {props.data.phoneNo}</p>
+          <p>email: {props.data.email}</p>
+          <p>description: {props.data.description}</p>
+          <div>{ JSON.stringify(props)}</div>
     </div>
   )
 }
