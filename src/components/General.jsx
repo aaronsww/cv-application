@@ -1,12 +1,20 @@
 import React, {useState} from 'react';
 import '../App.css'
 import Display from './Display';
-import Exp from './Exp';
-import Edu from './Edu';
-
-import EduDisplay from './EduDisplay';
 
 function General() {
+
+  // const [count, setCount] = useState(0);
+
+  // const incrementCount = () => {
+  //   setCount(count + 1);
+  // };
+
+  // function displayAgain()
+  // {
+  //   if(count !=0 && count < 5)
+  //   return <Exp/>
+  // }
 
   const[info, setInfo] = useState({name: '', post: '',phoneNo: '',email: '', description: ''})
   
@@ -25,12 +33,9 @@ function General() {
               <input type='email' value={info.email} onChange={e => setInfo({...info, email : e.target.value})}/>
               <textarea type='text' value={info.description} onChange={e => setInfo({...info, description : e.target.value})}/>
             </fieldset>
-            <Exp/>
-            <Edu/>
+           
         </div>
-        <div>
             <Display data={info} />
-        </div>
       </div>
   )
 }

@@ -5,7 +5,7 @@ function Exp() {
     const[eduInfo, setEduInfo] = useState({course: '', uni: '',startDate: '',endDate: '' })
 
   return (
-    <div>
+    <div  className='mainContainer'>
         <fieldset>
               <legend>Education</legend>
               <input type='text' value={eduInfo.course} onChange={(e) => setEduInfo({...eduInfo, course : e.target.value})}/>
@@ -13,9 +13,7 @@ function Exp() {
               <input type='text' value={eduInfo.startDate} onChange={e => setEduInfo({...eduInfo, startDate : e.target.value})}/>
               <input type='text' value={eduInfo.endDate} onChange={e => setEduInfo({...eduInfo, endDate : e.target.value})}/>
             </fieldset>
-          <div>
-            <EduDisplay data={eduInfo} />
-          </div>
+        <EduDisplay data={eduInfo} />
     </div>
   )
 }

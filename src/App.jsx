@@ -1,6 +1,8 @@
 import React , {useState} from 'react';
 import './App.css'
 import General from './components/General';
+import Exp from './components/Exp';
+import Edu from './components/Edu';
 
 function App() {
       
@@ -12,17 +14,25 @@ function App() {
 
   function displayAgain()
   {
-    if(count !=0 && count < 5)
-    return <General/>
+    if(count !=0 )
+    return <Exp/>
+  }
+
+  function displayAgain2()
+  {
+    if(count !=0 )
+    return <Edu/>
   }
     
   return(
     <div >
       <General /> 
-      {/* <button onClick={handleContent} type="submit">Add</button> */}
-      <div>{count}</div>
-      <button onClick={incrementCount}>Increment</button>
+      <Exp/>
       {displayAgain()}
+        <button onClick={incrementCount}>Add</button>
+      <Edu/>
+      {displayAgain2()}
+        <button onClick={incrementCount}>Add</button>
     </div>
   )
 }
