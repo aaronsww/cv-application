@@ -3,7 +3,6 @@ import React from 'react'
 function Display(props) {
   return (
     <div>
-         
           <h2>name: {props.data.name}</h2>
           <p>post: {props.data.post}</p>
           <p>number: {props.data.phoneNo}</p>

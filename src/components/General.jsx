@@ -4,18 +4,6 @@ import Display from './Display';
 
 function General() {
 
-  // const [count, setCount] = useState(0);
-
-  // const incrementCount = () => {
-  //   setCount(count + 1);
-  // };
-
-  // function displayAgain()
-  // {
-  //   if(count !=0 && count < 5)
-  //   return <Exp/>
-  // }
-
   const[info, setInfo] = useState({name: '', post: '',phoneNo: '',email: '', description: ''})
   
   function handleInfo(e, infor) {
@@ -33,7 +21,6 @@ function General() {
               <input type='email' value={info.email} onChange={e => setInfo({...info, email : e.target.value})}/>
               <textarea type='text' value={info.description} onChange={e => setInfo({...info, description : e.target.value})}/>
             </fieldset>
-           
         </div>
             <Display data={info} />
       </div>

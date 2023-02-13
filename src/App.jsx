@@ -6,33 +6,24 @@ import Edu from './components/Edu';
 
 function App() {
       
-  const [count, setCount] = useState(0);
+  const [countEdu, setCount] = useState(1);
+  const [countExp, setCount2] = useState(1);
 
-  const incrementCount = () => {
-    setCount(count + 1);
-  };
+  let expRows = []
+  for(let i = 0; i < countEdu; i++)
+    expRows.push( <Exp/>)
 
-  function displayAgain()
-  {
-    if(count !=0 )
-    return <Exp/>
-  }
+    let eduRows = []
+  for(let i = 0; i < countExp; i++)
+    eduRows.push( <Edu/>)
 
-  function displayAgain2()
-  {
-    if(count !=0 )
-    return <Edu/>
-  }
-    
   return(
     <div >
       <General /> 
-      <Exp/>
-      {displayAgain()}
-        <button onClick={incrementCount}>Add</button>
-      <Edu/>
-      {displayAgain2()}
-        <button onClick={incrementCount}>Add</button>
+      {expRows}
+        <button onClick= {() =>  setCount(countEdu + 1)}>Add</button>
+      {eduRows}
+        <button onClick={() => setCount2(countExp + 1)}>Add</button>
     </div>
   )
 }
