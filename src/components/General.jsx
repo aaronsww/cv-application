@@ -4,7 +4,9 @@ import Display from './Display';
 
 function General() {
 
-  const[info, setInfo] = useState({name: '', post: '',phoneNo: '',email: '', description: ''})
+  const aboutText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+
+  const[info, setInfo] = useState({name: 'Jeevan Aaron', post: 'Full Stack Developer',phoneNo: '01234567890',email: 'doeman@gmail.com', description: aboutText})
   
   function handleInfo(e, infor) {
     console.log(infor)

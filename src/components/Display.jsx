@@ -3,12 +3,19 @@ import React from 'react'
 function Display(props) {
   return (
     <div>
-          <h2>name: {props.data.name}</h2>
-          <p>post: {props.data.post}</p>
-          <p>number: {props.data.phoneNo}</p>
-          <p>email: {props.data.email}</p>
+          <div  className="topBar">
+            <div className="user">
+              <h1>{props.data.name}</h1>
+              <p>{props.data.post}</p>
+            </div>  
+            <div className='userDetails'>
+              <h3>CONTACT</h3>
+              <div>{props.data.phoneNo}</div>
+              <div>{props.data.email}</div>
+            </div>
+          </div>
           <p>description: {props.data.description}</p>
-          <div>{ JSON.stringify(props)}</div>
+          {/* <div>{ JSON.stringify(props)}</div> */}
     </div>
   )
 }

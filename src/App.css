@@ -8,3 +8,32 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
+
+.topBar{
+  display: flex;
+  justify-content:space-between;
+  border: 2px solid;
+  /* width: 40vw; */
+}
+
+.user{
+  width: 100%;
+  border: 2px solid red;
+  padding: 40px;
+}
+.user>p{
+  margin-top: -20px;
+  font-size: 24px;
+}
+
+.userDetails{
+  padding: 20px;
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-top: 3.5rem;
+} 
+.userDetails>h3{
+ letter-spacing: 3px;
+} 
