@@ -14,7 +14,7 @@ function Display(props) {
               <div>{props.data.email}</div>
             </div>
           </div>
-          <p>description: {props.data.description}</p>
+          <p className="desc">{props.data.description}</p>
           {/* <div>{ JSON.stringify(props)}</div> */}
     </div>
   )

@@ -3,7 +3,7 @@ import ExpDisplay from './ExpDisplay';
 
 function Exp() {
 
-    const[expInfo, setExpInfo] = useState({company: '', position: '',start: '',end: '', expDescription: ''})
+    const[expInfo, setExpInfo] = useState({company: 'INS ZOOM', position: 'Software Engineer',start: '2018',end: 'Present', expDescription: 'Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud.'})
 
   return (
     <div  className='mainContainer'>

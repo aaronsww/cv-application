@@ -13,13 +13,12 @@ fieldset {
   display: flex;
   justify-content:space-between;
   border: 2px solid;
-  /* width: 40vw; */
+  width: 40vw; 
 }
 
 .user{
   width: 100%;
   border: 2px solid red;
-  padding: 40px;
 }
 .user>p{
   margin-top: -20px;
@@ -27,13 +26,37 @@ fieldset {
 }
 
 .userDetails{
-  padding: 20px;
   border: 2px solid blue;
-  display: flex;
-  flex-direction: column;
   font-size: 12px;
   margin-top: 3.5rem;
+  margin-top: 30px;
 } 
 .userDetails>h3{
  letter-spacing: 3px;
 } 
+.desc{
+  width: 40vw; 
+  border: 2px solid red;
+  margin-top: -3px;
+}
+
+.wholeSection{
+  width: 40vw;
+  border: 2px solid purple;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper>section{
+  display: flex;
+}
+.location{
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 2px solid;
+}
+.doj,.doe{
+  padding: 0px 5px 0px 5px;
+}
