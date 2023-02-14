@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import EduDisplay from './EduDisplay';
 
 function Exp() {
-    const[eduInfo, setEduInfo] = useState({course: '', uni: '',startDate: '',endDate: '' })
+    const[eduInfo, setEduInfo] = useState({course: 'CS50: Introduction to Computer Science', uni: 'Harvard University',startDate: '2020',endDate: 'Present' })
 
   return (
     <div  className='mainContainer'>
