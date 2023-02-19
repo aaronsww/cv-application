@@ -22,7 +22,7 @@ fieldset {
 }
 .user>p{
   margin-top: -20px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .userDetails{
@@ -59,4 +59,13 @@ fieldset {
 }
 .doj,.doe{
   padding: 0px 5px 0px 5px;
+}
+
+.informationContainer{
+  width: 30%;
+}
+
+.addBtn{
+  margin-left: 8%;
+  margin-top: 5px;
 }
