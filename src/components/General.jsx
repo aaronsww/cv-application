@@ -14,8 +14,8 @@ function General() {
   }
   return(
       <div className='mainContainer'>
-        <div>
-            <fieldset>
+        <div className='informationContainer'>
+            <fieldset >
               <legend>User Information</legend>
               <input type='text' value={info.name} onChange={(e) => handleInfo(e, info.name)}/>
               <input type='text' value={info.post} onChange={e => setInfo({...info, post : e.target.value})}/>
