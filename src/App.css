@@ -6,6 +6,8 @@
 
 .sectionTitle{
   margin-left: 8%;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
  
 .topBar{
@@ -13,6 +15,7 @@
   justify-content:space-between;
   border: 2px solid;
   width: 40vw; 
+  padding: 15px;
 }
 
 .user{
@@ -27,23 +30,39 @@
 .userDetails{
   border: 2px solid blue;
   font-size: 12px;
-  margin-top: 3.5rem;
-  margin-top: 30px;
+ 
 } 
-.userDetails>h3{
+.contact{
  letter-spacing: 3px;
+ font-size: larger;
 } 
+.expTitle{
+  letter-spacing: 2px;
+  margin-left: 52%;
+  margin-bottom: -30px;
+  margin-top: 50px;
+}
+.eduTitle{
+  letter-spacing: 2px;
+  margin-left: 52%;
+  margin-bottom: -30px;
+}
 .desc{
   width: 40vw; 
   border: 2px solid red;
   margin-top: -3px;
+  padding: 15px;
 }
 
 .wholeSection{
   width: 40vw;
   border: 2px solid purple;
+  padding: 15px;
+  height: 10vh;
 }
-
+.eduSection{
+  margin-top: -55px;
+}
 .wrapper{
   display: flex;
   justify-content: space-between;
@@ -73,4 +92,12 @@
 
 .deleteBtn{
   margin-left: 1%;
+}
+
+.experience{
+  margin-top: -60px;
+}
+
+.education{
+  margin-top: -0px;
 }

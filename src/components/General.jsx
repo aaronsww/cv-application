@@ -14,14 +14,14 @@ function General() {
   }
   return(
       <div className='mainContainer'>
-        <div className='informationContainer'>
+        <div className='informationContainer topBox'>
               <input type='text' value={info.name} onChange={(e) => handleInfo(e, info.name)}/>
               <input type='text' value={info.post} onChange={e => setInfo({...info, post : e.target.value})}/>
               <input type='number' value={info.phoneNo} onChange={e => setInfo({...info, phoneNo : e.target.value})}/>
               <input type='email' value={info.email} onChange={e => setInfo({...info, email : e.target.value})}/>
               <textarea type='text' value={info.description} onChange={e => setInfo({...info, description : e.target.value})}/>
         </div>
-          <Display data={info} />
+        <Display data={info} />
       </div>
   )
 }

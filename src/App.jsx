@@ -18,23 +18,30 @@ function App() {
     <div>
       <div className='sectionTitle'>User Information</div>
       <General />
-     <div className="sectionTitle">Work Experience</div>
-      {expRows}
-      <button className="addBtn" onClick={() => setCount(countEdu + 1)}>
-        Add
-      </button>
-      <button className="deleteBtn" onClick={() => setCount(countEdu - 1)}>
-        Delete
-      </button>
 
-      <div className='sectionTitle'>Education</div>
-      {eduRows}
-      <button className="addBtn" onClick={() => setCount2(countExp + 1)}>
-        Add
-      </button>
-      <button className="deleteBtn" onClick={() => setCount2(countExp - 1)}>
-        Delete
-      </button>
+    <section className="experience">
+      <h3 className="expTitle">WORK EXPERIENCE</h3>
+       <div className="sectionTitle">Work Experience</div>
+        {expRows}
+        <button className="addBtn" onClick={() => setCount(countEdu + 1)}>
+          Add
+        </button>
+        <button className="deleteBtn" onClick={() => setCount(countEdu - 1)}>
+          Delete
+        </button>
+    </section>
+
+      <section className="education">
+        <h3 className="eduTitle">EDUCATION</h3>
+        <div className='sectionTitle'>Education</div>
+        {eduRows}
+        <button className="addBtn" onClick={() => setCount2(countExp + 1)}>
+          Add
+        </button>
+        <button className="deleteBtn" onClick={() => setCount2(countExp - 1)}>
+          Delete
+        </button>
+      </section>
     </div>
   );
 }

@@ -12,7 +12,7 @@ function Exp() {
   });
 
   return (
-    <div className="mainContainer">
+    <div className="mainContainer expContainer">
       <div className="informationContainer">
       
           <input

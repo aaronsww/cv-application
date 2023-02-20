@@ -9,7 +9,7 @@ function Display(props) {
               <p>{props.data.post}</p>
             </div>  
             <div className='userDetails'>
-              <h3>CONTACT</h3>
+              <h4 className='contact'>CONTACT</h4>
               <div>{props.data.phoneNo}</div>
               <div>{props.data.email}</div>
             </div>
