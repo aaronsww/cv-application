@@ -4,11 +4,10 @@
   justify-content: space-around;
 }
 
-fieldset {
-  display: flex;
-  flex-direction: column;
+.sectionTitle{
+  margin-left: 8%;
 }
-
+ 
 .topBar{
   display: flex;
   justify-content:space-between;
@@ -63,9 +62,15 @@ fieldset {
 
 .informationContainer{
   width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 .addBtn{
   margin-left: 8%;
   margin-top: 5px;
+}
+
+.deleteBtn{
+  margin-left: 1%;
 }

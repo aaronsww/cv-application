@@ -14,8 +14,7 @@ function Exp() {
   return (
     <div className="mainContainer">
       <div className="informationContainer">
-        <fieldset>
-          <legend>Work Experience</legend>
+      
           <input
             type="text"
             value={expInfo.position}
@@ -47,7 +46,7 @@ function Exp() {
               setExpInfo({ ...expInfo, expDescription: e.target.value })
             }
           />
-        </fieldset>
+       
       </div>
       <ExpDisplay data={expInfo} />
     </div>
