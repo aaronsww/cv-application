@@ -15,12 +15,11 @@ function App() {
   for (let i = 0; i < countExp; i++) eduRows.push(<Edu />);
 
   return (
-    <div>
-      <div className='sectionTitle'>User Information</div>
+    <div className="">
+      <span className='sectionTitle user-info'>User Information</span>
       <General />
-
     <section className="experience">
-      <h3 className="expTitle">WORK EXPERIENCE</h3>
+      <h4 className="expTitle">WORK EXPERIENCE</h4>
        <div className="sectionTitle">Work Experience</div>
         {expRows}
         <button className="addBtn" onClick={() => setCount(countEdu + 1)}>
@@ -32,7 +31,7 @@ function App() {
     </section>
 
       <section className="education">
-        <h3 className="eduTitle">EDUCATION</h3>
+        <h4 className="eduTitle">EDUCATION</h4>
         <div className='sectionTitle'>Education</div>
         {eduRows}
         <button className="addBtn" onClick={() => setCount2(countExp + 1)}>
