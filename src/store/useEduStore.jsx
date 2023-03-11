@@ -9,9 +9,8 @@ const useEduStore = create((set) => ({
   },
   setEdu: (newData) =>
     set((state) => ({
-      // general: newData,
-      general: { ...state.edu, ...newData },
+      edu: { ...state.edu, ...newData },
     })),
 }));
 
-export default useGeneralStore;
+export default useEduStore;
