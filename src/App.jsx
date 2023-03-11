@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import General from "./components/General";
+import Display from "./components/Display";
 import Exp from "./components/Exp";
 import Edu from "./components/Edu";
 
@@ -18,17 +19,18 @@ function App() {
     <div className="">
       <span className='sectionTitle user-info'>User Information</span>
       <General />
-    <section className="experience">
-      <h4 className="expTitle">WORK EXPERIENCE</h4>
-       <div className="sectionTitle">Work Experience</div>
-        {expRows}
-        <button className="addBtn" onClick={() => setCount(countEdu + 1)}>
-          Add
-        </button>
-        <button className="deleteBtn" onClick={() => setCount(countEdu - 1)}>
-          Delete
-        </button>
-    </section>
+      <Display/>
+      {/* <section className="experience">
+        <h4 className="expTitle">WORK EXPERIENCE</h4>
+        <div className="sectionTitle">Work Experience</div>
+          {expRows}
+          <button className="addBtn" onClick={() => setCount(countEdu + 1)}>
+            Add
+          </button>
+          <button className="deleteBtn" onClick={() => setCount(countEdu - 1)}>
+            Delete
+          </button>
+      </section>
 
       <section className="education">
         <h4 className="eduTitle">EDUCATION</h4>
@@ -40,7 +42,7 @@ function App() {
         <button className="deleteBtn" onClick={() => setCount2(countExp - 1)}>
           Delete
         </button>
-      </section>
+      </section> */}
     </div>
   );
 }
