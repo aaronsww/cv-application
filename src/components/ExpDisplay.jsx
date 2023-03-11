@@ -1,19 +1,21 @@
 import React from "react";
+import useExpStore from "../store/useExpStore";
 
-function ExpDisplay(props) {
+function ExpDisplay() {
+  const exp = useExpStore((state) => state.exp);
+
   return (
     <div className="wholeSection">
-      
       <div className="wrapper">
-        <div className="title"> {props.data.position}</div>
+        <div className="title"> {exp.position}</div>
         <section>
-          <div className="location"> {props.data.company}</div>
-          <div className="doj"> {props.data.start}</div>
+          <div className="location"> {exp.company}</div>
+          <div className="doj"> {exp.startDate}</div>
           <div>-</div>
-          <div className="doe"> {props.data.end}</div>
+          <div className="doe"> {exp.endDate}</div>
         </section>
       </div>
-      <div className="description"> {props.data.expDescription}</div>
+      <div className="description"> {exp.expDescription}</div>
     </div>
   );
 }

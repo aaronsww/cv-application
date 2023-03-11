@@ -2,10 +2,10 @@ import { create } from "zustand";
 
 const useEduStore = create((set) => ({
   edu: {
-    course: "adkjsda",
-    uni: "asbjnjdan",
-    startDate: "addw",
-    endDate: "dawd",
+    course: "",
+    uni: "",
+    startDate: "",
+    endDate: "",
   },
   setEdu: (newData) =>
     set((state) => ({

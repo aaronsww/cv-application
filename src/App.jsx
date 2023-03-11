@@ -4,23 +4,27 @@ import General from "./components/General";
 import Display from "./components/Display";
 
 import Exp from "./components/Exp";
+import ExpDisplay from "./components/ExpDisplay";
 
 import Edu from "./components/Edu";
 import EduDisplay from "./components/EduDisplay";
 
 function App() {
-  const [countExp, setCount] = useState(1);
-  const [countEdu, setCount2] = useState(1);
+  const [countExp, setCountExp] = useState(1);
+  const [countEdu, setCountEdu] = useState(1);
 
-  let expRows = [];
-  for (let i = 0; i < countExp; i++) expRows.push(<Exp />);
+  let expInput = [];
+  let expOutput = [];
+  for (let i = 0; i < countExp; i++) {
+    expInput.push(<Exp />);
+    expOutput.push(<ExpDisplay />);
+  }
 
   let eduInput = [];
   let eduOutput = [];
-  for (let i = 0; i < countEdu; i++) 
-  {
+  for (let i = 0; i < countEdu; i++) {
     eduInput.push(<Edu />);
-    eduOutput.push(<EduDisplay/>)
+    eduOutput.push(<EduDisplay />);
   }
 
   return (
@@ -28,33 +32,32 @@ function App() {
       <span className="sectionTitle user-info">User Information</span>
       <General />
       <Display />
-      <Edu />
-      <EduDisplay/>
 
-      {/* <section className="experience">
+      <section className="experience">
         <h4 className="expTitle">WORK EXPERIENCE</h4>
         <div className="sectionTitle">Work Experience</div>
-        {expRows}
-        <button className="addBtn" onClick={() => setCount(countExp + 1)}>
+        {expInput}
+        {expOutput}
+        <button className="addBtn" onClick={() => setCountExp(countExp + 1)}>
           Add
         </button>
-        <button className="deleteBtn" onClick={() => setCount(countExp - 1)}>
+        <button className="deleteBtn" onClick={() => setCountExp(countExp - 1)}>
           Delete
         </button>
-      </section> */}
+      </section>
 
-      {/* <section className="education">
+      <section className="education">
         <h4 className="eduTitle">EDUCATION</h4>
-        <div className='sectionTitle'>Education</div>
+        <div className="sectionTitle">Education</div>
         {eduInput}
         {eduOutput}
-        <button className="addBtn" onClick={() => setCount2(countEdu + 1)}>
+        <button className="addBtn" onClick={() => setCountEdu(countEdu + 1)}>
           Add
         </button>
-        <button className="deleteBtn" onClick={() => setCount2(countEdu - 1)}>
+        <button className="deleteBtn" onClick={() => setCountEdu(countEdu - 1)}>
           Delete
         </button>
-      </section>  */}
+      </section>
     </div>
   );
 }

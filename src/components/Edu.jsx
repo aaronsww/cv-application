@@ -8,10 +8,10 @@ function Edu() {
   const edu = useEduStore((state) => state.edu);
   const setEdu = useEduStore((state) => state.setEdu);
 
-  const [course, setCourse] = useState("");
-  const [uni, setUni] = useState("");
-  const [startDate, setStartDate] = useState("");
-  const [endDate, setEndDate] = useState("");
+  const [course, setCourse] = useState("CS50: Introduction to Computer Science");
+  const [uni, setUni] = useState("Harvard University");
+  const [startDate, setStartDate] = useState("2020");
+  const [endDate, setEndDate] = useState("Present");
 
   useEffect(() => {
     setEdu({
