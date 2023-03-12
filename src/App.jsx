@@ -28,36 +28,45 @@ function App() {
   }
 
   return (
-    <div className="">
-      <span className="sectionTitle user-info">User Information</span>
-      <General />
-      <Display />
+    <div className="mainContainer">
+      <div className="">
+        <span className="sectionTitle user-info">User Information</span>
+        <General />
+        <section className="experience">
+          <div className="sectionTitle">Work Experience</div>
+          {expInput}
+          <button className="addBtn" onClick={() => setCountExp(countExp + 1)}>
+            Add
+          </button>
+          <button
+            className="deleteBtn"
+            onClick={() => setCountExp(countExp - 1)}
+          >
+            Delete
+          </button>
+        </section>
+        <section className="education">
+          <div className="sectionTitle">Education</div>
+          {eduInput}
+          <button className="addBtn" onClick={() => setCountEdu(countEdu + 1)}>
+            Add
+          </button>
+          <button
+            className="deleteBtn"
+            onClick={() => setCountEdu(countEdu - 1)}
+          >
+            Delete
+          </button>
+        </section>
+      </div>
 
-      <section className="experience">
+      <div>
+        <Display />
         <h4 className="expTitle">WORK EXPERIENCE</h4>
-        <div className="sectionTitle">Work Experience</div>
-        {expInput}
         {expOutput}
-        <button className="addBtn" onClick={() => setCountExp(countExp + 1)}>
-          Add
-        </button>
-        <button className="deleteBtn" onClick={() => setCountExp(countExp - 1)}>
-          Delete
-        </button>
-      </section>
-
-      <section className="education">
         <h4 className="eduTitle">EDUCATION</h4>
-        <div className="sectionTitle">Education</div>
-        {eduInput}
         {eduOutput}
-        <button className="addBtn" onClick={() => setCountEdu(countEdu + 1)}>
-          Add
-        </button>
-        <button className="deleteBtn" onClick={() => setCountEdu(countEdu - 1)}>
-          Delete
-        </button>
-      </section>
+      </div>
     </div>
   );
 }

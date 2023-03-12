@@ -7,11 +7,14 @@ function General() {
   const general = useGeneralStore((state) => state.general);
   const setGeneral = useGeneralStore((state) => state.setGeneral);
 
-  const [name, setName] = useState("");
-  const [post, setPost] = useState("");
-  const [phoneNo, setPhoneNo] = useState(0);
-  const [email, setEmail] = useState("");
-  const [description, setDescription] = useState("");
+  const aboutText =
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+
+  const [name, setName] = useState("Jeevan Aaron");
+  const [post, setPost] = useState("Full Stack Developer");
+  const [phoneNo, setPhoneNo] = useState(9945226832);
+  const [email, setEmail] = useState("doeman@gmail.com");
+  const [description, setDescription] = useState(aboutText);
 
   useEffect(() => {
     setGeneral({
@@ -23,9 +26,6 @@ function General() {
       description,
     });
   }, [name, post, phoneNo, email, description]);
-
-  // const aboutText =
-  //   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
 
   // const [info, setInfo] = useState({
   // name: "Jeevan Aaron",

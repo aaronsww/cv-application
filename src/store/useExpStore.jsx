@@ -6,7 +6,7 @@ const useExpStore = create((set) => ({
     position: "",
     startDate: "",
     endDate: "",
-    expDescription:"",
+    expDescription: "",
   },
   setExp: (newData) =>
     set((state) => ({

@@ -1,8 +1,7 @@
 import React from "react";
 import useEduStore from "../store/useEduStore";
 
-function EduDisplay( ) {
-
+function EduDisplay() {
   // props
 
   const edu = useEduStore((state) => state.edu);
