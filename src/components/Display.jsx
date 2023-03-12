@@ -12,7 +12,7 @@ function Display() {
         <div className="user">
           {/* <h1>{props.data.name}</h1>
               <p>{props.data.post}</p> */}
-          <h1>{general.name}</h1>
+          <h1 className="name">{general.name}</h1>
           <p>{general.post}</p>
         </div>
         <div className="userDetails">
@@ -24,7 +24,7 @@ function Display() {
         </div>
       </div>
       {/* <p className="desc">{props.data.description}</p> */}
-      <p className="desc">{general.description}</p>
+      <p>{general.description}</p>
       {/* <div>{ JSON.stringify(props)}</div> */}
     </div>
   );

@@ -5,7 +5,7 @@ function ExpDisplay() {
   const exp = useExpStore((state) => state.exp);
 
   return (
-    <div className="wholeSection">
+    <div className="expSection">
       <div className="wrapper">
         <div className="title"> {exp.position}</div>
         <section>

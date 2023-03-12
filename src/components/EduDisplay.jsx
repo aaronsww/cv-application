@@ -7,7 +7,7 @@ function EduDisplay() {
   const edu = useEduStore((state) => state.edu);
 
   return (
-    <div className="wholeSection">
+    <div className="eduSection">
       <div className="wrapper">
         {/* <div className="title"> {props.data.course}</div> */}
         <div className="title"> {edu.course}</div>

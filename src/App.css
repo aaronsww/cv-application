@@ -1,70 +1,73 @@
+body{
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 .mainContainer{
   display: flex;
   justify-content: space-around;
+  font-family: 'Lato', sans-serif;
 }
 
-.sectionTitle{
-  margin-top: 10px;
-  margin-bottom: 5px;
+.input{
+  border: 1px solid black;
+  width: 35vw; 
+  padding: 1% 2% 1% 2%;
+  border-radius: 10px;
 }
- 
+
+.output{
+  border: 2px solid black;
+  width: 40vw; 
+  padding: 0.5% 2% 0.5% 2%;
+  /* height: min(90vh); */
+}
 .topBar{
   display: flex;
   justify-content:space-between;
-  border: 2px solid;
-  padding: 15px;
-}
-
-.topBox{
-  margin-top: 10px;
+  border-bottom: 2px solid rgb(131, 12, 152);
+  margin: auto;
 }
 
 .user{
   width: 100%;
-  border: 2px solid red;
 }
+
+.name{
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
 .user>p{
   margin-top: -20px;
   font-size: 18px;
 }
 
 .userDetails{
-  border: 2px solid blue;
   font-size: 12px;
- 
 } 
 .contact{
- letter-spacing: 3px;
+ letter-spacing: 2px;
+ margin-bottom: 10px;
  font-size: larger;
+ font-weight: 700;
 } 
 .expTitle{
   letter-spacing: 2px;
-  letter-spacing: 2px;
-  border: 2px solid purple;
-  padding-left: 20px;
+  font-weight: 700;
 }
 .eduTitle{
   letter-spacing: 2px;
-  border: 2px solid purple;
-  padding-left: 20px;
+  margin-top: 40px;
+  font-weight: 700;
 }
-.desc{
-  width: 40vw; 
-  border: 2px solid red;
-  margin-top: -3px;
-  padding: 15px;
-}
-
-.wholeSection{
-  width: 40vw;
-  border: 2px solid purple;
-  padding: 15px;
+.expSection{
   height: 10vh;
 }
-/* .eduSection{
-  margin-top: -55px;
-} */
+.eduSection{
+  height: 5vh;
+}
 .wrapper{
   display: flex;
   justify-content: space-between;
@@ -77,28 +80,44 @@
   padding-right: 5px;
   border-right: 2px solid;
 }
+.title{
+  font-weight: 700;
+}
 .doj,.doe{
+  font-weight: 700;
   padding: 0px 5px 0px 5px;
+}
+.textBox{
+  height: 12vh;
 }
 
 .informationContainer{
   display: flex;
   flex-direction: column;
 }
-
-.addBtn{
-    
+.informationContainer>input, textarea{
   margin-top: 5px;
+  font-family: 'Lato', sans-serif;
+}
+.endBox{
+  margin-bottom: 5px;
+}
+.sectionContainer{
+  display: flex;
 }
 
+.addBtn{
+  margin-top: 5px;
+}
 .deleteBtn{
   margin-left: 1%;
 }
 
-.experience{
-  /* margin-top: -60px; */
+.topBox{
+  margin-top: 5px;
 }
-
-.education{
-  /* margin-top: -0px; */
-} 
+.sectionTitle{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+ 

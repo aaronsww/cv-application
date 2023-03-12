@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="mainContainer">
-      <div className="">
+      <div className="input">
         <span className="sectionTitle user-info">User Information</span>
         <General />
         <section className="experience">
@@ -60,7 +60,7 @@ function App() {
         </section>
       </div>
 
-      <div>
+      <div className="output">
         <Display />
         <h4 className="expTitle">WORK EXPERIENCE</h4>
         {expOutput}
