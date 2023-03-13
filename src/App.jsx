@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="mainContainer">
       <div className="input">
-        <span className="sectionTitle user-info">User Information</span>
+        <span className="sectionTitle user-info">Personal Details</span>
         <General />
         <section className="experience">
           <div className="sectionTitle">Work Experience</div>

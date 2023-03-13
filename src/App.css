@@ -4,6 +4,10 @@ body{
   margin-right: 5%;
 }
 
+textarea {
+  resize: none;
+}
+
 .mainContainer{
   display: flex;
   justify-content: space-around;
@@ -13,20 +17,23 @@ body{
 .input{
   border: 1px solid black;
   width: 35vw; 
-  padding: 1% 2% 1% 2%;
+  padding: 1% 2% 2% 2%;
   border-radius: 10px;
 }
 
 .output{
-  border: 2px solid black;
+  border: 1px solid #1e3f1f;
   width: 40vw; 
   padding: 0.5% 2% 0.5% 2%;
-  /* height: min(90vh); */
+  color: #5c6b73;
+  background-color: #fefcfb;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  height: 90vh;
 }
 .topBar{
   display: flex;
   justify-content:space-between;
-  border-bottom: 2px solid rgb(131, 12, 152);
+  border-bottom: 2px solid #1e3f1f;
   margin: auto;
 }
 
@@ -37,30 +44,48 @@ body{
 .name{
   letter-spacing: 2px;
   font-weight: 900;
+  color: #1e3f1f;
 }
 
 .user>p{
   margin-top: -20px;
   font-size: 18px;
+  color: #7b5a30;
 }
 
 .userDetails{
   font-size: 12px;
 } 
+.call{
+  display: flex;
+}
+.call>span{
+  margin-left: 3px;
+}
+.email{
+  margin-top: 3px;
+  display: flex;
+}
+.email>span{
+  margin-left: 3px;
+}
 .contact{
  letter-spacing: 2px;
  margin-bottom: 10px;
  font-size: larger;
  font-weight: 700;
+ color: #1e3f1f;
 } 
 .expTitle{
   letter-spacing: 2px;
   font-weight: 700;
+  color: #1e3f1f;
 }
 .eduTitle{
   letter-spacing: 2px;
   margin-top: 40px;
   font-weight: 700;
+  color: #1e3f1f;
 }
 .expSection{
   height: 10vh;
@@ -82,10 +107,12 @@ body{
 }
 .title{
   font-weight: 700;
+  color: #7b5a30;
 }
 .doj,.doe{
   font-weight: 700;
   padding: 0px 5px 0px 5px;
+  color: #7b5a30;
 }
 .textBox{
   height: 12vh;
@@ -119,5 +146,6 @@ body{
 .sectionTitle{
   margin-top: 10px;
   margin-bottom: 5px;
+  font-size: 18px;
 }
  
