@@ -1,6 +1,6 @@
 # CV Application Maker
 
-<a href="https://aaronsww.github.io/cv-application">Live Demonstartion.</a>
+<a href="https://cv-application-three.vercel.app/">Live Demonstartion.</a>
 
 ## Project Summary
 
@@ -8,8 +8,7 @@ A React App built with <a href="https://github.com/pmndrs/zustand">zustand</a> t
 
 ### In Action
 
-<img src="" alt="">
-<img src="" alt="">
+<img src="images\CV Maker - Brave 20-04-2023 10_41_12.png" alt="">
 
 ## Credits
 
