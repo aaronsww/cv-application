@@ -1,11 +1,12 @@
 import React from "react";
 import useEduStore from "../store/useEduStore";
 
-function EduDisplay() {
-  // props
+function EduDisplay({ index }) {
+  const edu = useEduStore((state) => state.edu[index]);
 
-  const edu = useEduStore((state) => state.edu);
-
+  if (!edu) {
+    return null;
+  }
   return (
     <div className="eduSection">
       <div className="wrapper">

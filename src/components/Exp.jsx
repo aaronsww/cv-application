@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import ExpDisplay from "./ExpDisplay";
 import useExpStore from "../store/useExpStore";
 
-function Exp() {
-  const exp = useExpStore((state) => state.exp);
+function Exp({ index }) {
+  const exp = useExpStore((state) => state.exp[index]);
   const setExp = useExpStore((state) => state.setExp);
 
   const [company, setCompany] = useState("Digital Ocean");
@@ -14,9 +14,9 @@ function Exp() {
     "Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commo."
   );
 
+
   useEffect(() => {
-    setExp({
-      ...exp,
+    setExp(index, {
       company,
       position,
       startDate,
@@ -30,7 +30,7 @@ function Exp() {
       <div className="informationContainer topBox">
         <input
           type="text"
-          value={exp.position}
+          value={position}
           onChange={(e) => setPosition(e.target.value)}
         />
         <input
