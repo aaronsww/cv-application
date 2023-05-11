@@ -5,26 +5,29 @@ import Display from "./components/Display";
 
 import Exp from "./components/Exp";
 import ExpDisplay from "./components/ExpDisplay";
+import useExpStore from "./store/useExpStore";
 
 import Edu from "./components/Edu";
 import EduDisplay from "./components/EduDisplay";
+import useEduStore from "./store/useEduStore";
 
 function App() {
   const [countExp, setCountExp] = useState(1);
+  const deleteExp = useExpStore((state) => state.deleteExp);
   const [countEdu, setCountEdu] = useState(1);
 
   let expInput = [];
   let expOutput = [];
   for (let i = 0; i < countExp; i++) {
-    expInput.push(<Exp />);
-    expOutput.push(<ExpDisplay />);
+    expInput.push(<Exp index={i} />);
+    expOutput.push(<ExpDisplay index={i} />);
   }
 
   let eduInput = [];
   let eduOutput = [];
   for (let i = 0; i < countEdu; i++) {
-    eduInput.push(<Edu />);
-    eduOutput.push(<EduDisplay />);
+    eduInput.push(<Edu index={i} />);
+    eduOutput.push(<EduDisplay index={i} />);
   }
 
   return (
@@ -40,7 +43,10 @@ function App() {
           </button>
           <button
             className="deleteBtn"
-            onClick={() => setCountExp(countExp - 1)}
+            onClick={() => {
+              setCountExp(countExp - 1);
+              deleteExp(countExp - 1);
+            }}
           >
             Delete
           </button>
@@ -53,7 +59,10 @@ function App() {
           </button>
           <button
             className="deleteBtn"
-            onClick={() => setCountEdu(countEdu - 1)}
+            onClick={() => {
+              setCountEdu(countEdu - 1);
+              deleteEdu(countEdu - 1);
+            }}
           >
             Delete
           </button>
@@ -70,5 +79,5 @@ function App() {
     </div>
   );
 }
-    
+
 export default App;

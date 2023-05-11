@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import useEduStore from "../store/useEduStore";
 import EduDisplay from "./EduDisplay";
 
-function Edu() {
+function Edu({ index }) {
 
-  const edu = useEduStore((state) => state.edu);
+  const edu = useEduStore((state) => state.edu[index]);
   const setEdu = useEduStore((state) => state.setEdu);
 
   const [course, setCourse] = useState(
@@ -15,8 +15,7 @@ function Edu() {
   const [endDate, setEndDate] = useState("Present");
 
   useEffect(() => {
-    setEdu({
-      ...edu,
+    setEdu(index, {
       course,
       uni,
       startDate,

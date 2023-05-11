@@ -1,8 +1,12 @@
 import React from "react";
 import useExpStore from "../store/useExpStore";
 
-function ExpDisplay() {
-  const exp = useExpStore((state) => state.exp);
+function ExpDisplay({index}) {
+  const exp = useExpStore((state) => state.exp[index]);
+
+  if (!exp) {
+    return null;   
+  }
 
   return (
     <div className="expSection">
