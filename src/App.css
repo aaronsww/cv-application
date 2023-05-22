@@ -149,3 +149,32 @@ textarea {
   font-size: 18px;
 }
  
+@media only screen and (max-width: 1190px) {
+
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input,
+  .output {
+    width: 50vw;
+    min-width: 500px;
+  }
+
+  .output {
+    margin-top: 10vh;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+
+
+  .input,
+  .output {
+    width: 50vw;
+    min-width: 100%;
+  }
+
+}
